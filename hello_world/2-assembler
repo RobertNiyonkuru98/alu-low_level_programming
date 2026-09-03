@@ -1,6 +1,2 @@
 #!/bin/bash
-/*
-* A script that uses the assembler compilation process to change the assembly into binary
-*/
-
 gcc -C "$CFILE".s -o "$CFILE".o
