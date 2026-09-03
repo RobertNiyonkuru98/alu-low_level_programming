@@ -1,0 +1,5 @@
+#!/bin/bash
+/*
+* A script that uses the compiled preprocessing
+*/
+gcc -E "$CFILE" -o "$CFILE".i

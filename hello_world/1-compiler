@@ -1,0 +1,6 @@
+#!/bin/bash
+/*
+* A script that uses the compiler process to change the $CFILE into assembly
+*/
+
+gcc -S "$CFILE".i -o "$CFILE".s
