@@ -1,16 +1,17 @@
 #include "main.h"
 
 /**
- * _is alpha - Checks for lowercase and uppercase chars
+ * _isalpha - Checks for lowercase and uppercase chars
  * @c: The char TBC
  *
  * Return: 1 is c is lowercase or uppercase
  */
-int _isalpha(int c) {
-  if (c >= 'a' && c <= 'z')
-    return (1);
-  else if (c >= 'A' && c <= 'Z')
-    return (1);
-  else
-    return (0);
+int _isalpha(int c)
+{
+	if (c >= 'a' && c <= 'z')
+		return (1);
+	else if (c >= 'A' && c <= 'Z')
+		return (1);
+	else
+		return (0);
 }
