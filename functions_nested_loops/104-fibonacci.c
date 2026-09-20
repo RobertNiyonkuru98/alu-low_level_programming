@@ -37,7 +37,7 @@ int main(void)
 			sum_half1 += 1;
 			sum_half2 %= 1000000000;
 		}
-		
+
 		printf(", %lu%09lu", sum_half1, sum_half2);
 
 		fib1_half1 = fib2_half1;
