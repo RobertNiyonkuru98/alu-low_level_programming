@@ -77,7 +77,7 @@ void print_osabi(unsigned char *e)
 void print_type(unsigned int type, unsigned char *e_ident)
 {
 	if (e_ident[EI_DATA] == ELFDATA2MSB)
-		type = (type >> 8) | (type << 8);
+		type = ((type & 0xFF00) >> 8) | ((type & 0x00FF) << 8);
 
 	printf("  Type:                              ");
 	if (type == ET_NONE)
